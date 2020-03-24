@@ -71,9 +71,6 @@ class Maze:
                 elif c == 1:
                     ch = ' '
                     color = Color.WALL
-                elif c == 2:
-                    ch = '@'
-                    color = Color.PLAYER
                 
                 try:
                     window.addstr(my, mx, ch, curses.color_pair(color))
